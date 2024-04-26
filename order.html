@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <style type="text/css">
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button[type=submit] {
+  width: 50%;
+  background-color: #bfc1c2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+._form{
+  width:80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.form{
+  width:80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  background: rgba(0,0,0,0.3); 
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 70px;
+}
+.order{
+  width: 100%
+  background: rgba(0,0,0,0.3);
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="_form">
+            <h2>ONLINE ORDER FORM</h2><br>
+        </div>
+        <div class="form" method= "POST">
+            <form method="post">
+                <input type="text" id="fname" name="name" placeholder="Name" required><br>
+                
+                <input type="text" id="e-id" name="emailid" placeholder="Email Id" required><br>
+                
+                <input type="text" id="add" name="address" placeholder="Address" required><br>
+                
+                <input type="text" id="mno" name="mobileno" placeholder="Mobile No" required><br>
+                
+                <input type="text" id="dish" name="order" placeholder="Order" required><br>
+            
+                <input type="text" id="quantity" name="quantity" placeholder="Quantity of Order" required><br><br>
+                <button type="submit" onclick="alert('Your order has been placed successfully.')">Place my order</button>
+            </form>
+            <p>Note: Payment details will be mailed you on your email address which you have provided.</p>
+        </div>
+    </section>
+</body>
+</html>
+
+ 
